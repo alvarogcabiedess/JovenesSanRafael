@@ -1,0 +1,123 @@
+/* Reset básico */
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f8f8;
+  color: #333;
+  padding-bottom: 70px; /* espacio para bottom nav */
+}
+
+.topbar {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 15px;
+  background:#fff;
+  box-shadow:0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor:pointer;
+}
+
+.date-section h2 {
+  font-size: 1.1rem;
+}
+.date-section p {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.container {
+  padding:20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform .2s;
+}
+.card:hover {
+  transform: translateY(-4px);
+}
+.card .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #f7b500;
+}
+
+.liturgia h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.liturgia span {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.horas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.hora-btn {
+  flex: 1 1 30%;
+  text-align:center;
+  padding: 8px 0;
+  background:#fff;
+  border-radius: 10px;
+  text-decoration:none;
+  color:#333;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.hora-btn.active {
+  border: 2px solid #f7b500;
+  font-weight: bold;
+}
+
+.biblia {
+  margin-top: 25px;
+}
+.biblia-btn {
+  display:block;
+  background: #fff;
+  padding: 18px;
+  border-radius: 15px;
+  text-align:center;
+  text-decoration:none;
+  color:#000;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  display:flex;
+  justify-content: space-around;
+  background:#fff;
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}
+.nav-item {
+  text-decoration:none;
+  color:#555;
+  font-size: 0.9rem;
+}
+.nav-item.active {
+  color:#000;
+  font-weight:600;
+}
