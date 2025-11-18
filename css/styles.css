@@ -88,6 +88,47 @@ body {
   font-weight: bold;
 }
 
+/* Mostrar el mismo estilo visual cuando el usuario pasa el ratón */
+.hora-btn:hover,
+.hora-btn:focus {
+  border: 2px solid #f7b500;
+  font-weight: bold;
+  outline: none;
+}
+
+/* Estilos para la página del evangelio y el comentario */
+.evangelio-container {
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+.section__head h2 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+.section__content {
+  margin-bottom: 14px;
+}
+.section__content p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.section__content.comentario p {
+  background:#faf7f0;
+  padding:12px;
+  border-left:4px solid #f7b500;
+  border-radius:6px;
+}
+
+/* Versículo mostrado en index */
+.versiculo {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 6px;
+  font-style: italic;
+}
+
 .biblia {
   margin-top: 25px;
 }
